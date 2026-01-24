@@ -1,0 +1,9 @@
+{
+  "name": "rutracker-plugin",
+  "description": "Search for torrents on rutracker.org and download using aria2c",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aleksandr Bobrov"
+  },
+  "keywords": ["rutracker", "torrent", "download", "movies"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "albo-plugins",
+  "owner": {
+    "name": "Aleksandr Bobrov"
+  },
+  "metadata": {
+    "description": "Personal plugin marketplace with useful skills and tools",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "rutracker-plugin",
+      "source": "./plugins/rutracker-plugin",
+      "description": "Search for torrents on rutracker.org and download using aria2c"
+    }
+  ]
+}
