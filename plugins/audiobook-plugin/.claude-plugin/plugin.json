@@ -1,0 +1,9 @@
+{
+  "name": "audiobook-plugin",
+  "description": "Convert book chapters from Calibre library to MP3 audiobook using OpenAI TTS",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aleksandr Bobrov"
+  },
+  "keywords": ["audiobook", "calibre", "tts", "openai", "mp3", "chapters"]
+}
