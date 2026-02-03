@@ -5,13 +5,18 @@
   },
   "metadata": {
     "description": "Personal plugin marketplace with useful skills and tools",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "rutracker-plugin",
       "source": "./plugins/rutracker-plugin",
       "description": "Search for torrents on rutracker.org and download using aria2c"
+    },
+    {
+      "name": "last30days-skill",
+      "source": "./plugins/last30days-skill",
+      "description": "Research any topic across Reddit and X from the last 30 days, synthesize community insights, and generate copy-paste-ready prompts"
     }
   ]
 }
