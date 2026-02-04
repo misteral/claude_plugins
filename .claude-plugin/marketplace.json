@@ -14,9 +14,9 @@
       "description": "Search for torrents on rutracker.org and download using aria2c"
     },
     {
-      "name": "last30days-skill",
-      "source": "./plugins/last30days-skill",
-      "description": "Research any topic across Reddit and X from the last 30 days, synthesize community insights, and generate copy-paste-ready prompts"
+      "name": "audiobook-plugin",
+      "source": "./plugins/audiobook-plugin",
+      "description": "Convert book chapters from Calibre library to MP3 audiobook using OpenAI TTS"
     }
   ]
 }

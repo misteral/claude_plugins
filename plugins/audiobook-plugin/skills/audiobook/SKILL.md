@@ -1,12 +1,12 @@
 ---
 name: audiobook
-description: Convert book chapters from Calibre library to audiobook (MP3) using Google Gemini TTS. Use when user wants to create audiobook from specific chapters of a book.
-allowed-tools: Bash(calibredb:*) Bash(ebook-convert:*) Bash(uv:*)
+description: Convert book chapters from Calibre library to audiobook (MP3) using Google Gemini TTS via Vertex AI. High-quality audiobook narration with professional voice prompts.
+allowed-tools: Bash(calibredb:*) Bash(ebook-convert:*) Bash(uv:*) Bash(rm -rf /var/folders:*) Bash(rm -rf /tmp:*)
 argument-hint: <chapters> книги <book title>
 metadata:
   author: aleksandrbobrov
-  version: "2.0"
-compatibility: Requires Calibre, ffmpeg, uv, GOOGLE_API_KEY
+  version: "3.0"
+compatibility: Requires Calibre, ffmpeg, uv, Google Cloud auth (gcloud auth application-default login)
 ---
 
 # Audiobook Creator Skill
@@ -79,7 +79,6 @@ uv run --project "$SCRIPTS_DIR" python "$SCRIPTS_DIR/extract_chapters.py" "$WORK
 ```bash
 uv run --project "$SCRIPTS_DIR" python "$SCRIPTS_DIR/md_to_audiobook.py" \
   "$WORK_DIR/chapters.md" \
-  --voice Kore \
   --output ~/Downloads/"<BookTitle>_chapters_<X-Y>.mp3"
 ```
 
@@ -89,18 +88,9 @@ uv run --project "$SCRIPTS_DIR" python "$SCRIPTS_DIR/md_to_audiobook.py" \
 rm -rf "$WORK_DIR"
 ```
 
-## Available Voices
+## Voice
 
-| Voice | Style |
-|-------|-------|
-| Puck | Upbeat |
-| Charon | Informative |
-| Kore | Firm (default) |
-| Fenrir | Excitable |
-| Aoede | Breezy |
-| Leda | Youthful |
-| Orus | Firm |
-| Zephyr | Bright |
+Uses **Despina** voice - warm, intimate narration style optimized for audiobooks.
 
 ## Response Format
 
@@ -122,5 +112,5 @@ Size: <X.XX> MB
 
 - **Book not found**: Show available books with similar titles
 - **Chapter not found**: List available chapters with `--list`
-- **No GOOGLE_API_KEY**: "Please set GOOGLE_API_KEY environment variable"
+- **Auth error**: Run `gcloud auth application-default login`
 - **ffmpeg missing**: "Install with: brew install ffmpeg"
