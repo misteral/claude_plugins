@@ -1,0 +1,9 @@
+{
+  "name": "system-plugin",
+  "description": "System utilities for disk cleanup, maintenance, and diagnostics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aleksandr Bobrov"
+  },
+  "keywords": ["system", "disk", "cleanup", "cache", "maintenance"]
+}

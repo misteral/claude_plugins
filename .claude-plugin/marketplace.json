@@ -22,6 +22,11 @@
       "name": "developer-plugin",
       "source": "./plugins/developer-plugin",
       "description": "Developer tools and coding guidelines including Microsoft Pragmatic Rust Guidelines"
+    },
+    {
+      "name": "system-plugin",
+      "source": "./plugins/system-plugin",
+      "description": "System utilities for disk cleanup, maintenance, and diagnostics"
     }
   ]
 }

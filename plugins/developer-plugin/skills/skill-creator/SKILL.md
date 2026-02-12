@@ -107,14 +107,21 @@ Add entry to `.claude-plugin/marketplace.json` at the repository root:
 
 **This step is CRITICAL — without it the plugin will not activate!**
 
-### Step 8: Verify
+### Step 8: Validate
 
-Read back the created files and confirm:
-- [ ] `SKILL.md` has valid frontmatter (`name` matches directory name)
-- [ ] `description` is specific and includes trigger keywords
-- [ ] `.claude-plugin/plugin.json` exists
-- [ ] Plugin is registered in root `marketplace.json`
-- [ ] No unnecessary files created (no README.md, CHANGELOG.md, etc.)
+Run the validation script on the created skill:
+
+```bash
+scripts/validate-skill.sh <path/to/skill>
+```
+
+It checks all rules from the agentskills.io spec + plugin integration:
+- Frontmatter fields and constraints (name, description, etc.)
+- Name format (lowercase, no consecutive hyphens, matches directory)
+- Description length (1-1024 chars)
+- Body length (<500 lines recommended)
+- `.claude-plugin/plugin.json` exists
+- Plugin registered in `marketplace.json`
 
 ## Description Writing Guide
 
