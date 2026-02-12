@@ -17,6 +17,11 @@
       "name": "audiobook-plugin",
       "source": "./plugins/audiobook-plugin",
       "description": "Convert book chapters from Calibre library to MP3 audiobook using OpenAI TTS"
+    },
+    {
+      "name": "developer-plugin",
+      "source": "./plugins/developer-plugin",
+      "description": "Developer tools and coding guidelines including Microsoft Pragmatic Rust Guidelines"
     }
   ]
 }

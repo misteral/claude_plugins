@@ -1,0 +1,9 @@
+{
+  "name": "developer-plugin",
+  "description": "Developer tools and coding guidelines including Microsoft Pragmatic Rust Guidelines",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aleksandr Bobrov"
+  },
+  "keywords": ["rust", "guidelines", "microsoft", "developer", "coding-standards"]
+}
