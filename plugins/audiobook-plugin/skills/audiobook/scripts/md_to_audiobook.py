@@ -24,7 +24,7 @@ LOCATION = "us-central1"
 # Default settings
 VOICE = "Despina"  # Warm, intimate narration style
 DEFAULT_MODEL = "gemini-2.5-pro-tts"
-DEFAULT_MAX_CHARS = 1500  # Smaller chunks for better quality
+DEFAULT_MAX_CHARS = 20000  # Smaller chunks for better quality
 
 # Professional audiobook narrator prompt
 AUDIOBOOK_PROMPT = """You are an audiobook narrator. Read the following text aloud.
