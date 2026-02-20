@@ -1,11 +1,10 @@
 ---
-name: audiobook
+name: albo:audiobook
 description: Convert book chapters from Calibre library to audiobook (MP3) using Google Gemini TTS via Vertex AI. High-quality audiobook narration with professional voice prompts.
 allowed-tools: Bash(calibredb:*) Bash(ebook-convert:*) Bash(uv:*) Bash(rm -rf /var/folders:*) Bash(rm -rf /tmp:*)
 argument-hint: <chapters> книги <book title>
 metadata:
   author: aleksandrbobrov
-  version: "3.0"
 compatibility: Requires Calibre, ffmpeg, uv, Google Cloud auth (gcloud auth application-default login)
 ---
 

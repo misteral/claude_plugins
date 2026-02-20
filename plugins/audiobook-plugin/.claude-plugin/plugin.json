@@ -1,9 +1,17 @@
 {
   "name": "audiobook-plugin",
   "description": "Convert book chapters from Calibre library to MP3 audiobook using Google Gemini TTS via Vertex AI",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Aleksandr Bobrov"
   },
-  "keywords": ["audiobook", "calibre", "tts", "gemini", "vertex-ai", "mp3", "chapters"]
+  "keywords": [
+    "audiobook",
+    "calibre",
+    "tts",
+    "gemini",
+    "vertex-ai",
+    "mp3",
+    "chapters"
+  ]
 }
