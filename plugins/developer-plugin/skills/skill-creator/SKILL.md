@@ -1,5 +1,5 @@
 ---
-name: skill-creator
+name: albo:skill-creator
 description: Create new Claude Code skills and plugins. Use when asked to create, scaffold, or add a new skill or plugin. Handles full setup including SKILL.md, plugin.json, and marketplace registration.
 argument-hint: <skill-name> [in <plugin-name>]
 ---

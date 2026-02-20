@@ -1,5 +1,5 @@
 ---
-name: ms-rust
+name: albo:rust
 description: Applies Microsoft Pragmatic Rust Guidelines when writing or modifying Rust code. Use BEFORE writing ANY Rust code (.rs files) including simple programs. Enforces naming conventions, error handling, documentation standards, safety rules, and performance patterns.
 ---
 

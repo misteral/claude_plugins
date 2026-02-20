@@ -1,5 +1,5 @@
 ---
-name: rutracker
+name: albo:rutracker
 description: Search for torrents on rutracker.org and download using aria2c
 allowed-tools: Bash(aria2c:*)
 argument-hint: [film name] or "login"

@@ -1,5 +1,5 @@
 ---
-name: disk-cleanup
+name: albo:disk-cleanup
 description: Find and clean up large files and directories to free disk space. Analyzes cache directories, Docker/Colima storage, build artifacts, and system temp files. Use when disk space is low or user asks to free up space, find large files, or clean cache.
 metadata:
   author: aleksandrbobrov
